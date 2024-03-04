@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; 
+    background-color: #fff;
 }
 
 header {
@@ -37,6 +37,93 @@ nav ul li a.active {
 
 section {
     padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"],
+button {
+    padding: 5px 10px;
+    border: 1px solid #6a0dad; 
+    background-color: #fff; 
+    color: #6a0dad;
+}
+
+input[type="text"]:focus,
+button:focus {
+    outline: none;
+    border-color: #fff;
+}
+
+button:hover {
+    background-color: #6a0dad; 
+    color: #fff; 
+}
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  background-color: #7164d9; 
+  color: white;
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+#footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+footer img{
+  height: 30px;
+  width: 100vw;
+}
+footer p{
+  font-size: 10px;
+}
+
+
+/* Loader styles */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+.loader {
+    border: 6px solid #6a0dad;
+    border-top: 6px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite; 
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .hidden {
