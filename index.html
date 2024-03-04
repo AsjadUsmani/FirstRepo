@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakya Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader-container" id="loader">
+        <div class="loader"></div>
+  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="cart-link">My Cart</a></li>
+                <li><a href="#" id="account-link">My Account</a></li>
+            </ul>
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home-section" class="section">
+            <h2>Home Section</h2>
+            <p>Welcome to Zayka Express!</p>
+        </section>
+
+        <section id="cart-section" class="section hidden">
+            <h2>My Cart Section</h2>
+            <p>Your shopping cart is empty.</p>
+        </section>
+
+        <section id="account-section" class="section hidden">
+            <h2>My Account Section</h2>
+            <p>Welcome to your account!</p>
+        </section>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+    </main>
+  <footer id ="footer">
+    <p id ="copyright">&copy; 2023 Zayka Express. All rights reserved.</p>
+    <img height="100" src = "KromaApps1.png.jpg">
+    <p>Designed by KromaApps Innovators</p>
+  </footer>
+  
+
+    <script src="script.js"></script>
+</body>
+</html>
